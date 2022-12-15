@@ -4,5 +4,75 @@
 	box-sizing: border-box;
 }
 .logo {
-    height: 5rem;
+    height: 50px;
+    width: auto;
+}
+.page_container {
+    background-color: darkgray;
+    height: 100vh;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+.top_section {
+    background-color: lightgray;
+    height: 50%;
+    width: auto;
+    position: relative;
+    z-index: 2;
+}
+.name_card {
+    /* background-color: white; */
+    position: absolute;
+    z-index: 3;
+    height: 300px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.headshot {
+    object-fit: cover;
+    object-position: -.15px -3px;
+    border-radius: 50%;
+}
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 85px;
+    font-style: bolder;
+}
+footer {
+    height: 3.5rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    margin-top: auto;
+}
+
+@media only screen {
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+}
+@media only screen {
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+}
+@media only screen {
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+}
+@media screen {
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi)
+}
+@media only screen {
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1)
 }
