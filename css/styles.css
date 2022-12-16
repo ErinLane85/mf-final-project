@@ -8,7 +8,6 @@
     width: auto;
 }
 .page_container {
-    background-color: darkgray;
     height: 100vh;
     width: auto;
     position: relative;
@@ -42,8 +41,9 @@
     font-size: 85px;
     font-style: bolder;
 }
+
 body {
-    background-color: lightgray;
+    background-color: darkgray;
     height: 100vh;
     width: auto;
     margin-bottom: 0;
@@ -52,14 +52,84 @@ body {
     text-decoration: none;
     align-items: center;
 }
-footer {
+.jumbotron {
+    font-family: 'Yellowtail', cursive;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    /* background-color: #dee2e6; */
+    font-size: 6rem!important;
+}
+.timeline {
+    position: absolute;
+    z-index: 3;
+    margin-top: 550px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-color: rgb(148, 145, 145)!important;
+}
+/* footer {
     height: 3.5rem;
     width: 100%;
     bottom: 0;
     position: fixed;
     margin-top: auto;
     margin-bottom: 0;
+} */
+.horizontal-timeline .items {
+    border-top: 3px solid #000000;
 }
+.horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+} 
+.horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #000000;
+    top: 0;
+}
+.date_box {
+    padding-left: 2rem;
+    padding-right: 3rem;
+} 
+.horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:lightgray
+}
+.accordion {
+    margin: 50px 300px;
+}
+.accordion-button {
+    background-color: darkgray;
+}
+.social_media a {
+    text-decoration: none;
+}
+@media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+}
+
 @media only screen {
     and (min-device-width: 320px) 
     and (max-device-width: 480px)
